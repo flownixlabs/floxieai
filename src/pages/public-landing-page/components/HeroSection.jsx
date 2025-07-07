@@ -6,6 +6,8 @@
  
  const HeroSection = () => {
    const handleWhatsAppClick = () => {
+   }
+ }
 @@ .. @@
            {/* Logo */}
            <div className="flex justify-center mb-8">

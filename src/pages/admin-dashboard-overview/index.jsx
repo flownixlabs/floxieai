@@ -14,6 +14,7 @@
    const navigate = useNavigate();
    const [isLoading, setIsLoading] = useState(true);
    const [searchTerm, setSearchTerm] = useState('');
+ }
 +  const debouncedSearchTerm = useDebounce(searchTerm, 300);
    const [notifications, setNotifications] = useState(3);
  
