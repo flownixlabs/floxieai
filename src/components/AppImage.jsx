@@ -1,24 +1,23 @@
-@@ .. @@
--import React from 'react';
-+import React from 'react';
-+import OptimizedImage from './ui/OptimizedImage';
- 
- function Image({
-   src,
-@@ .. @@
- }) {
+import React from 'react';
+import OptimizedImage from './ui/OptimizedImage';
+
+function Image({
+  src,
+  alt,
+  className,
+  ...props
+}) {
 
    return (
--    <img
-+    <OptimizedImage
-       src={src}
-       alt={alt}
-       className={className}
--      onError={(e) => {
--        e.target.src = "/assets/images/no_image.png"
--      }}
-+      placeholder="/assets/images/no_image.png"
-+      lazy={true}
-       {...props}
-     />
-   );
+    <OptimizedImage
+      src={src}
+      alt={alt}
+      className={className}
+      placeholder="/assets/images/no_image.png"
+      lazy={true}
+      {...props}
+    />
+  );
+}
+
+export default Image;
