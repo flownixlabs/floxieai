@@ -30,7 +30,9 @@
   "scripts": {
     "start": "vite",
     "build": "vite build --sourcemap",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "analyze": "vite build --mode analyze",
+    "dev:fast": "vite --host 0.0.0.0 --port 4028 --force"
   },
   "eslintConfig": {
     "extends": [
